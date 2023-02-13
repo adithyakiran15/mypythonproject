@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Movie's List</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<!-- Image and text -->
+<nav class="navbar navbar-dark" style="background-color: #9400D3;">
+  <a class="navbar-brand" >
+      <h3>HELLO MOVIE LOVERS</h3>
+  </a>
+    <a class="btn btn-primary" href="{% url 'movieapp:add_movie'  %}">Add Your Favorite Movie</a>
+</nav>
+{% block body %}
+{% endblock %}
+</body>
+
+</html>

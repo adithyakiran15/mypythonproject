@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block body %}
+<br>
+<form  method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="name">Movie Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Movie Name:"><br><br>
+    <label for="desc">Descricption:</label><br>
+    <input type="text" id="desc" name="desc" placeholder="Descricption:"><br><br>
+    <label for="year">Year:</label><br>
+    <input type="text" id="year" name="year" placeholder="Year:"><br><br>
+    <label for="img">Poster:</label><br>
+    <input type="file" id="img" name="img" ><br><br>
+     <a href="{% url 'movieapp:index'  %}"><input type="submit"></a>
+
+
+
+</form>
+
+
+
+
+{% endblock %}
