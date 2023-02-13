@@ -1,0 +1,12 @@
+.banner{
+background-color: darkseagreen;
+width:100%;
+height:70px;
+margin-bottom:50px;
+}
+.banner-text{
+top: 5%;
+left: 45%;
+position:absolute;
+transform:transform;
+}
